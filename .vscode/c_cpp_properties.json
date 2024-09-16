@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Win32", // Will be a different name for Linux/macOS
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/Program Files/LLVM/bin/clang.exe", // Will be /usr/bin/clang or similar for Linux/macOS
+            "cStandard": "c23",
+            "cppStandard": "c++23",
+            "intelliSenseMode": "windows-clang-x64" // OS and architecture will be different for Linux/macOS and/or for ARM CPUs
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang.exe build active file",
+            "command": "C:/Program Files/LLVM/bin/clang.exe", // Will be /usr/bin/clang or similar for Linux/macOS
+            "args": [
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe", // Will be ${fileDirname}/${fileBasenameNoExtension} for Linux/macOS
+                "-Wall",
+                "-Wextra",
+                "-Wconversion",
+                "-Wsign-conversion",
+                "-Wshadow",
+                "-Wpedantic",
+                "-std=c23"
+            ],
+            "options": {
+                "cwd": "C:/Program Files/LLVM/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: C:/Program Files/LLVM/bin/clang.exe" // Will be /usr/bin/clang or similar for Linux/macOS
+        }
+    ]
+}
